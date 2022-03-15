@@ -15,3 +15,7 @@ Fill in the blanks, set "dev" as Active profiles in Run Config, and you should b
 
 ## The Basic Idea
 Zippy The Werewolf will accept any files. He will zip them and put them in the database. When this process is done, he will send the user a mail with a link to the zip. However, He knows that when he transforms, he will be super angry at all the zip files in the database, and go crush them.
+
+* Server: Spring Boot
+* Host: Heroku
+* Database: MongoDB
