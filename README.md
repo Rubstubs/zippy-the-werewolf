@@ -17,9 +17,9 @@ MAIL_PASSWORD=
 LINK_URL=http://localhost:8080/files/
 spring.data.mongodb.uri=
 ```
-2. Fill in the blanks, set "dev" as Active profiles in Run Config, and you should be up and running.
+2. Fill in the blanks, set "dev" as Active profiles in Run Config.
 
-## Stack
+### Stack
 * Server: Spring Boot
 * Host: Heroku
 * Database: MongoDB
