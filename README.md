@@ -1,6 +1,6 @@
 # Zippy The Werewolf
 
-To run locally create your own application-dev.properties inside resources directory and add the following:
+To run locally create application-dev.properties inside resources directory and add the following:
 ```
 spring.servlet.multipart.max-file-size=100MB
 spring.servlet.multipart.max-request-size=100MB
