@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zipper, The Werewolf</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+<div class="container h-100">
+    <div class="h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-sm-5">
+                <h1>Give Zipper some files, if you dare!</h1>
+                <form method="POST" action="/" enctype="multipart/form-data" id="fileUploadForm">
+                    <div class="form-group">
+                        <label class="control-label" for="files">Files</label>
+                        <input type="file" class="form-control" id="files" placeholder="Upload and zip files"
+                               multiple name="files">
+                        <br>
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <button type="submit" class="btn btn-default" id="btnSubmit">Go forth</button>
+                </form>
+                <p>Maximum file-size: 100MB</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
