@@ -27,7 +27,7 @@ class MailService(
         props["mail.smtp.port"] = "587"
 
         /**
-         * Login auth. Gets credentials from environment variables
+         * Mail login auth. Gets credentials from environment variables
          */
         fun getPasswordAuthentication(): Authenticator {
             return object : Authenticator() {
@@ -37,7 +37,7 @@ class MailService(
             }
         }
 
-        val session: Session = Session.getInstance(props, getPasswordAuthentication());
+        val session: Session = Session.getInstance(props, getPasswordAuthentication())
         return MimeMessage(session)
     }
 

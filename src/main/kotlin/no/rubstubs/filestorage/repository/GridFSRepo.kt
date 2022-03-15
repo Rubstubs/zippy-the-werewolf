@@ -12,6 +12,9 @@ import org.springframework.core.env.get
 import org.springframework.stereotype.Component
 import org.springframework.stereotype.Repository
 
+/**
+ * Makes a connection with MongoDB. GridFS is necessary for big files.
+ */
 @Repository
 class GridFSRepo (
     @Autowired private val env: Environment

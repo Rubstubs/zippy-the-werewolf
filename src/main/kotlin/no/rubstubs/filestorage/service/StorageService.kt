@@ -28,7 +28,8 @@ class StorageService(
     }
 
     /**
-     * @param objectIdString
+     * Loading file from db to client
+     * @param objectIdString String
      * @return Resource
      */
     fun loadFile(objectIdString: String): Resource {
@@ -74,12 +75,18 @@ class StorageService(
         }
     }
 
+    /**
+     * Zip one or more files
+     * @param files Array<File>
+     * @return File
+     */
     fun zip(files: Array<File>): File {
         print("Zipping:\n")
         val tmpFile = File.createTempFile("file", ".tmp")
         val fos = FileOutputStream(tmpFile)
         val zipOut = ZipOutputStream(fos)
 
+        // Zip each file into a single .zip file
         files.forEach { file ->
             println("\t\"${file.name}\"")
             zipOut.putNextEntry(ZipEntry(file.name))
@@ -99,6 +106,11 @@ class StorageService(
         return tmpFile
     }
 
+    /**
+     * Saves the zipped file to
+     * @param file File
+     * @return OjectId
+     */
     fun saveToDb(file: File): ObjectId {
         try {
             val streamToUploadFrom: InputStream = FileInputStream(file)

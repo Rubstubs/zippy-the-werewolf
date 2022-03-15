@@ -8,6 +8,15 @@ import org.springframework.core.env.get
 import org.springframework.stereotype.Component
 import java.io.File
 
+
+/**
+ * Tries to zip and store a file, then send a mail to user.
+ * @param email: String
+ * @param files: Array<File>
+ * @param storageService: StorageService
+ * @param emailService: MailService
+ * @param env: Environment
+ */
 @Component
 @Scope("prototype")
 class FileThread(
@@ -17,7 +26,6 @@ class FileThread(
         private val emailService: MailService,
         private val env: Environment
     ) : Thread() {
-
     override fun run() {
         try {
             val file = storageService.zip(files)
