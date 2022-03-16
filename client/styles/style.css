@@ -1,0 +1,51 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+#zippy {
+    width: 25%;
+    position: relative;
+}
+
+#zippy-title {
+    display: flex;
+    justify-content: center;
+}
+
+.zippy-img-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bi-card-checklist {
+    position: absolute;
+    top: 75%;
+    color: red;
+    font-size: 300%;
+    transform: translateX(-1000px);
+    transition: 2s ease-in-out;
+}
+
+.bi-card-checklist.clicked {
+    transform: translateX(0);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form input {
+    text-align: center;
+    padding: .4rem;
+    border-radius: 5px;
+}
+
+.form button {
+    background: black;
+    color: whitesmoke;
+    padding: .7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+}
