@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "npm i --include=dev && parcel build index.html --out-dir ../src/main/resources/static"
+    "build": "npm i --include=dev && parcel build index.html --no-minify --out-dir ../src/main/resources/static"
   },
   "keywords": [],
   "author": "",

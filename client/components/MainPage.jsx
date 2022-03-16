@@ -6,7 +6,7 @@ export function MainPage() {
         <div>
             <h1 id="zippy-title">Give Zippy some files, if you dare!</h1>
             <div className="zippy-img-container">
-                <img id="zippy" src={zippy} alt="zippy, the werewolf"/>
+                <img id="zippy-img" src={zippy} alt="zippy, the werewolf"/>
                 <i id="file-icon" className="bi bi-card-checklist"/>
             </div>
             <div>
