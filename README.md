@@ -19,7 +19,11 @@ spring.data.mongodb.uri=
 ```
 2. Fill in the blanks, set "dev" as Active profiles in Run Config.
 
+## Test server
+https://test-server-zippy.herokuapp.com
+
 ### Stack
 * Server: Spring Boot
 * Host: Heroku
 * Database: MongoDB
+* Front end: React
